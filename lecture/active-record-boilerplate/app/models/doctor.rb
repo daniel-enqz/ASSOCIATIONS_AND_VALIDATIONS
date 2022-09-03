@@ -8,9 +8,3 @@ class Doctor < ActiveRecord::Base
   validates :last_name, length: { minimum: 3 }
   validates :email, format: { with: /\A.*@.*\.com\z/ }
 end
-
-# rake db:drop / Drop the database
-# rake db:create / Create the database
-# rake db:migrate / Create the tables
-# rake db:timestamp / Create the timestamp for naming your migration files
-# rake console / Open the console and interact with your database/application
